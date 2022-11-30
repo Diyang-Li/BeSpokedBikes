@@ -61,7 +61,7 @@ CREATE TABLE Discount
     `DiscountPercentage`     DOUBLE
 );
 
-/*Build FK to connect saleperson and manger*/
+/*Build FK to connect saleperson and manager*/
 ALTER TABLE `salesperson`
     ADD CONSTRAINT fk_salesperson_salesperson FOREIGN KEY (`ManagerID`) REFERENCES `salesperson` (`SalespersonID`);
 
